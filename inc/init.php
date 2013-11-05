@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * Initial setup and constants
+ */
+function dawn_setup() {
+
+    // Make theme available for translation
+    // load_theme_textdomain('dawn', get_template_directory() . '/library/translation');
+
+    $get_theme_name = explode( '/themes/', get_template_directory() );
+
+    define( 'RELATIVE_PLUGIN_PATH',  str_replace( home_url() . '/', '', plugins_url() ) );
+    define( 'RELATIVE_CONTENT_PATH', str_replace( home_url() . '/', '', content_url() ) );
+    define( 'THEME_NAME',            next( $get_theme_name ) );
+    define( 'THEME_PATH',            RELATIVE_CONTENT_PATH . '/themes/' . THEME_NAME );
+    define( 'GOOGLE_ANALYTICS_ID',  '' );
+    define( 'POST_EXCERPT_LENGTH',  200 );
+    define( 'ASSETS_VERSION',    '1.0.7' );
+
+    // prevent livereload on domains without the following string
+    define( 'PRODUCTION_DOMAIN_CONTAINS', 'dawn' );
+
+}
+add_action( 'after_setup_theme', 'dawn_setup' );
+
+// Backwards compatibility for older than PHP 5.3.0
+if ( !defined( '__DIR__' ) ) { define( '__DIR__', dirname( __FILE__ ) ); }
