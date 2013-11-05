@@ -12,7 +12,7 @@ function dawn_styles() {
 		global $wp_styles;
 
 		// the main theme stylesheet
-		wp_register_style( 'dawn-main-styles', get_stylesheet_directory_uri() . '/library/css/style.css', array(), ASSETS_VERSION, 'all' );
+		wp_register_style( 'dawn-main-styles', get_stylesheet_directory_uri() . '/assets/css/style.css', array(), ASSETS_VERSION, 'all' );
 
 		// enqueue the main stylesheet
 		wp_enqueue_style( 'dawn-main-styles' );
