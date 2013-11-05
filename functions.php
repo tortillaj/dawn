@@ -13,9 +13,10 @@ require_once locate_template( '/inc/styles.php' );
 require_once locate_template( '/inc/scripts.php' );
 // require_once locate_template('/inc/sidebars.php');
 // require_once locate_template('/inc/menus.php');
-require_once locate_template( '/inc/thumbnails.php' );
+// require_once locate_template( '/inc/thumbnails.php' );
 
 /* include theme reformaters */
 require_once locate_template( '/inc/rewrites.php' );
 require_once locate_template( '/inc/relative-urls.php' );
 require_once locate_template( '/inc/headers.php' );
+

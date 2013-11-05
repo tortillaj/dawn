@@ -18,8 +18,8 @@ function dawn_setup() {
     define( 'POST_EXCERPT_LENGTH',  200 );
     define( 'ASSETS_VERSION',    '1.0.7' );
 
-    // prevent livereload on domains without the following string
-    define( 'PRODUCTION_DOMAIN_CONTAINS', 'dawn' );
+    // enable livereload on the following domain
+    define( 'DEV_DOMAIN_CONTAINS', 'dev' );
 
 }
 add_action( 'after_setup_theme', 'dawn_setup' );
