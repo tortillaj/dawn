@@ -1,8 +1,8 @@
 <article class="sidebar <?php echo dawn_sidebar_class(); ?>" role="complementary">
 
-	<?php if ( is_active_sidebar( 'default_sidebar' ) ) : ?>
+	<?php if ( is_active_sidebar( 'sidebar_primary' ) ) : ?>
 
-	  <?php dynamic_sidebar( 'default_sidebar' ); ?>
+	  <?php dynamic_sidebar( 'sidebar_primary' ); ?>
 
 	<?php else : ?>
 
