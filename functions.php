@@ -12,7 +12,7 @@ require_once locate_template( '/inc/post-types.php' );
 require_once locate_template( '/inc/styles.php' );
 require_once locate_template( '/inc/scripts.php' );
 // require_once locate_template('/inc/sidebars.php');
-// require_once locate_template('/inc/menus.php');
+require_once locate_template('/inc/menus.php');
 // require_once locate_template( '/inc/thumbnails.php' );
 
 /* include theme reformaters */
