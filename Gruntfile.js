@@ -23,7 +23,7 @@ module.exports = function(grunt) {
             },
             livereload: {
                 options: { livereload: true },
-                files: ['assets/css/style.css', 'assets/js/source/*.js', '*.php', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
+                files: ['assets/css/style.css', 'assets/js/source/*.js', '**/*.php', 'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}']
             }
         },
 
