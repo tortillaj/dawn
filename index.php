@@ -1,5 +1,5 @@
-<article id="post-<?php the_ID(); ?>" <?php post_class(array((has_post_thumbnail()) ? 'thumb' : 'no-thumb')); ?> role="article">
+<article <?php post_class( array( (has_post_thumbnail()) ? 'thumb' : 'no-thumb' ) ); ?> role="article">
 
-  <?php locate_template('templates/content/content-excerpt.php'); ?>
+  <?php get_template_part( 'templates/content/content', 'excerpt' ); ?>
 
 </article>

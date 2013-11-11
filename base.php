@@ -9,7 +9,7 @@
 
   <?php get_template_part( 'templates/document', 'header' ); ?>
 
-  <article class="wrap" role="document">
+  <article class="wrap">
 
 
     <?php if ( have_posts() ) : ?>

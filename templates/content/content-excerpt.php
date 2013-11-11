@@ -1,2 +1,2 @@
-<?php locate_template('templates/common/common-title.php'); ?>
-<?php locate_template('templates/common/common-excerpt.php'); ?>
+<?php include(locate_template( 'templates/common/common-title.php' )); ?>
+<?php include(locate_template( 'templates/common/common-excerpt.php' )); ?>
