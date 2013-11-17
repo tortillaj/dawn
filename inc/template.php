@@ -60,4 +60,24 @@ class Template
     <?php endif;
   }
 
+  /*
+   *  Use the Co-Authors plugin if installed
+   */
+  public static function co_authors( $links = true )
+  {
+    if ( function_exists( 'coauthors' ) && function_exists( 'coauthors_posts_links' ) ) {
+      if ( ! $links ) {
+        coauthors();
+      } else {
+        coauthors_posts_links();
+      }
+    } else {
+      if ( ! $links ) {
+        get_the_author();
+      } else {
+        the_author_posts_link();
+      }
+    }
+  }
+
 }
