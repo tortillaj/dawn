@@ -45,4 +45,19 @@ class Template
     return $trimmed_text;
   }
 
+  /*
+   * Pagination (older posts / newer posts links)
+   */
+  public static function paginate()
+  {
+    global $wp_query;
+
+    if ( $wp_query->max_num_pages > 1 ): ?>
+      <nav id="pagination">
+        <?php next_posts_link( '<span class="meta-nav">&larr;</span> Older posts' ); ?>
+        <?php previous_posts_link( 'Newer posts <span class="meta-nav">&rarr;</span>' ); ?>
+      </nav>
+    <?php endif;
+  }
+
 }

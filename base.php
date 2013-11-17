@@ -21,6 +21,8 @@
       <?php include dawn_template_path(); ?>
     <?php endwhile; ?>
 
+    <?php echo Template::paginate(); ?>
+
   <?php else: ?>
     <?php get_template_part( 'templates/content/content', 'notfound' ); ?>
   <?php endif; ?>
