@@ -12,7 +12,7 @@ class Template
       global $post;
     }
 
-    $content = (!empty($post->post_excerpt)) ? self::shorten( $post->post_excerpt) : self::shorten( $post->post_content);
+    $content = (! empty($post->post_excerpt)) ? self::shorten( $post->post_excerpt ) : self::shorten( $post->post_content );
 
     return $content . '<a href="' . get_permalink() . '">Read More &raquo;</a>';
   }
