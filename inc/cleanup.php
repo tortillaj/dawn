@@ -27,8 +27,6 @@ function dawn_head_cleanup() {
     add_action( 'wp_head', 'dawn_rel_canonical' );
   }
 
-  // Register sidebars
-  add_action( 'widgets_init', 'dawn_register_sidebars' );
 }
 
 function dawn_rel_canonical() {
