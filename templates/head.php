@@ -9,9 +9,6 @@
 
   <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/apple-icon-touch.png">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
-  <!--[if IE]>
-  <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-  <![endif]-->
 
   <meta name="msapplication-TileColor" content="#f01d4f">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/assets/images/win8-tile-icon.png">
