@@ -14,7 +14,7 @@ class Template
 
     $content = (! empty($post->post_excerpt)) ? self::shorten( $post->post_excerpt ) : self::shorten( $post->post_content );
 
-    return $content . '<a href="' . get_permalink() . '">Read More &raquo;</a>';
+    return $content . '<a href="' . get_permalink() . '">Read More &rarr;</a>';
   }
 
   /*
