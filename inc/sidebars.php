@@ -24,5 +24,3 @@ function dawn_register_sidebars() {
     'after_title' => '</h4><div class="widget-inner">',
   ));
 }
-
-add_action( 'widgets_init', 'dawn_register_sidebars' );
